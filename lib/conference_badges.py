@@ -10,10 +10,7 @@ def assign_rooms(names):
     return rooms
 
 def printer(names):
-    badges = batch_badge_creator(names)
-    rooms = assign_rooms(names)
-
-    for badge in badges:
+    for badge in batch_badge_creator(names):
         print(badge)
-    for room in rooms:
+    for room in assign_rooms(names):
         print(room)
